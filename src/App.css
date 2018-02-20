@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 2%;
+}
+
+button {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
