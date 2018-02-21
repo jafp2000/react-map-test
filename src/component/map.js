@@ -46,12 +46,13 @@ class Map extends Component {
             this.map.addListener('click', (event) => 
                 this.setLatLng(event.latLng.lat(), event.latLng.lng())
             );
-            this.state.markers.map(marker => 
-                googleMaps.Marker({
+            this.state.markers.map(m => {
+                new googleMaps.Marker({
                     map: this.map,
-                    position: marker
+                    icon: 'https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png',
+                    position: m
                 })
-            )
+            })
           }).catch( err => {
             console.warning( 'Something went wrong loading the map', err );
           });
