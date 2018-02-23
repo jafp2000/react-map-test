@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Map from './component/map';
-import Copy from './component/copy';
 
 const API_CONFIG = {
   key:'AIzaSyASdqEa_TiJh82_xwQjo5jjNwmT4kvAAgQ',
@@ -14,7 +13,6 @@ class App extends Component {
     return (
       <div className="App">
         <Map config={API_CONFIG} initialPosition={initialPosition}/>
-        <Copy/>
       </div>
     );
   }
