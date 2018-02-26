@@ -1,0 +1,97 @@
+.react-date-picker {
+    z-index: 4;
+  }
+
+  /* Borde de todos los componentes */
+  .react-date-picker,
+  .react-date-picker *,
+  .react-date-picker *:before,
+  .react-date-picker *:after {
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+  }
+
+  /* Muestra los botones predetarminados de abrir y cerrar */
+  .react-date-picker__button, .react-date-picker__button__input {
+    display: none;
+  }
+
+  .react-date-picker__calendar {
+    width: 350px;
+  }
+  .react-date-picker__calendar--closed {
+    display: none;
+  }
+  .react-date-picker__calendar--above-label {
+    bottom: 100%;
+    top: auto;
+  }
+  .react-date-picker__calendar .react-calendar {
+    border-width: thin;
+  }
+
+  /* Barra de navegacion */ 
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__navigation {
+    border: 1px solid green;
+  }
+
+  /* Flechas de la barra */
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__navigation
+  .react-calendar__navigation__arrow
+  {
+    border: 2px solid brown;
+  }
+
+  /* label central */
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__navigation
+  .react-calendar__navigation__label
+  {
+    border: 2px solid orangered;
+  }
+
+  /* Zona del calendario en general */
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__month-view {
+    border: 1px solid blue;
+  }
+
+  /* Fila con los labels de los dias */
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__month-view
+  .react-calendar__month-view__weekdays {
+    border: 2px solid yellow;
+  }
+
+  /* label con el dia */
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__month-view
+  .react-calendar__month-view__weekdays 
+  .react-calendar__month-view__weekdays__weekday {
+    border: 3px solid red;
+  }
+
+  /* Grid de botones */
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__month-view
+  .react-calendar__month-view__days {
+    border: 2px solid blueviolet;
+  }
+  
+  /* Boton con el dia */
+  .react-date-picker__calendar 
+  .react-calendar 
+  .react-calendar__month-view
+  .react-calendar__month-view__days
+  .react-calendar__month-view__days__day {
+    border: 3px solid blue;
+  }
